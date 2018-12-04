@@ -8,13 +8,9 @@ var images = [
 var showImage;
 var count = 0;
 function displayImage() {
-    var img = $("<img>");
-    img.attr("src", images[count][0]);
-    img.attr("width", "100%");
-    img.attr("height", "100%");
-    img.attr("target", "_blank");
+    var img = $("<img>").attr({"src": images[count][0], "width": "100%", "height": "100%"});
     $("#slideshow").html(img);
-    $("#info").html("<a href='" + images[count][1] + "'>Link To</a>");
+    $("#info").html("<a href='" + images[count][1] + "' target='_blank'>Link To</a>");
     startSlideshow();
 }
 
