@@ -1,0 +1,42 @@
+body {
+    letter-spacing: 150%;
+    background-image: url(../images/background_img.jpg);
+    background-size: 100%;
+}
+
+.container {
+    margin: 10px;
+}
+
+#logo {
+    color: yellow;
+    font-size: 65px;
+    font-family: 'Text Me One', sans-serif;
+    margin: 10px 0 0 10px;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#me {
+    margin-left: 10px;
+    background: white;
+    width: 24%;
+    height: 500px;
+}
+
+#slideshow {
+    width: 50%;
+    height: 500px;
+}
+
+#info {
+    background: white;
+    width: 24%;
+    height: 500px;
+}
