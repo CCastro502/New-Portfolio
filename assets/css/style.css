@@ -30,6 +30,10 @@ a {
 
 }
 
+a:hover {
+    color: darkcyan;
+}
+
 #logo {
     letter-spacing: 1px;
     color: yellow;
@@ -61,7 +65,7 @@ p {
 #slideshow {
     width: 88%;
     margin: 10px;
-    height: 250px;
+    height: 40%;
 }
 
 #info {
@@ -69,12 +73,13 @@ p {
     height: 400px;
 }
 
-#technology {
-    color: lime;
+#project-link {
+    color: gold;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 18px;
 }
 
-/* #time {
-    display: flex;
-    flex-direction: column;
-
-} */
+#project-link:hover {
+    color: darkorange;
+}

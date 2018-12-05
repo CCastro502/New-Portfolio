@@ -1,9 +1,9 @@
 // Global variables
 var images = [
-    ["Gif-Movie-News Finder", "assets/images/api.png", "Portfolio/API.html", "Multiple APIs used", "Javascript", "Jquery", "Bootstrap styling"],
-    ["Trivia Game", "assets/images/Trivia-Game.png", "Portfolio/Trivia-Game.html", "JQuery", "Javascript", "Flexbox styling"],
-    ["Onion Collector Game", "assets/images/Onion-Collector.png", "Portfolio/Onion-Collector.html", "JQuery", "Javascript", "Boostrap styling"],
-    ["Word-Guessing Game", "assets/images/Word-Guessing-Game.png", "Portfolio/Word-Guessing-Game.html", "Javascript", "Bootstrap styling"]
+    ["Project Elevation", "assets/images/How-High.png", "https://jmemmett.github.io/Project1/", "Multiple APIs in connection", "Leaflet", "JQuery", "JavaScript", "Bootstrap styling"],
+    ["Gif-Movie-News Finder", "assets/images/api.png", "https://ccastro502.github.io/API-Info/", "Multiple APIs used", "JQuery", "Javascript", "Bootstrap styling"],
+    ["Trivia Game", "assets/images/Trivia-Game.png", "https://ccastro502.github.io/TriviaGame/", "JQuery", "JavaScript", "Flexbox styling"],
+    ["Onion Collector Game", "assets/images/Onion-Collector.png", "https://ccastro502.github.io/unit-4-game/", "JQuery", "JavaScript", "Boostrap styling"]
 ]
 var count = 0;
 var count2 = 0;
@@ -12,7 +12,7 @@ function displayImage() {
     var [a, b, c, ...d] = images[count];
     d.forEach(function(item) {
         if (count2 === 0) {
-            $("#row-" + count2).append("<td>" + item + "</td><td>" + "<a href='" + c + "' target='_blank'>" + a + "</a>")
+            $("#row-" + count2).append("<td>" + item + "</td><td>" + "<a href='" + c + "' id='project-link' target='_blank'>" + a + "</a>")
         } else {
             $("#row-" + count2).append("<td>" + item + "</td>");
         }
@@ -31,6 +31,7 @@ function nextImage() {
     $("#row-1").html("");
     $("#row-2").html("");
     $("#row-3").html("");
+    $("#row-4").html("");
     $("#slideshow").html("")
     count++;
     if (count === images.length) {
