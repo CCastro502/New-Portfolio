@@ -12,7 +12,7 @@ function displayImage() {
     var [a, b, c, ...d] = images[count];
     d.forEach(function(item) {
         if (count2 === 0) {
-            $("#row-" + count2).append("<td>" + item + "</td><td>" + "<a href='" + c + "' id='project-link' target='_blank'>" + a + "</a>")
+            $("#row-" + count2).append("<td>" + item + "</td><td>" + "<a href='" + c + "' target='_blank'>" + a + "</a>")
         } else {
             $("#row-" + count2).append("<td>" + item + "</td>");
         }
