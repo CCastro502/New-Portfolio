@@ -1,30 +1,42 @@
+// Global variables
 var images = [
-    ["assets/images/api.png", "Portfolio/API.html"],
-    ["assets/images/Trivia-Game.png", "Portfolio/Trivia-Game.html"],
-    ["assets/images/Onion-Collector.png", "Portfolio/Onion-Collector.html"],
-    ["assets/images/Word-Guessing-Game.png", "Portfolio/Word-Guessing-Game.html"]
+    ["Gif-Movie-News Finder", "assets/images/api.png", "Portfolio/API.html", "Multiple APIs used", "Javascript", "Jquery", "Bootstrap styling"],
+    ["Trivia Game", "assets/images/Trivia-Game.png", "Portfolio/Trivia-Game.html", "JQuery", "Javascript", "Flexbox styling"],
+    ["Onion Collector Game", "assets/images/Onion-Collector.png", "Portfolio/Onion-Collector.html", "JQuery", "Javascript", "Boostrap styling"],
+    ["Word-Guessing Game", "assets/images/Word-Guessing-Game.png", "Portfolio/Word-Guessing-Game.html", "Javascript", "Bootstrap styling"]
 ]
-
-var showImage;
 var count = 0;
+var count2 = 0;
+
 function displayImage() {
-    var img = $("<img>").attr({"src": images[count][0], "width": "100%", "height": "100%"});
+    var [a, b, c, ...d] = images[count];
+    d.forEach(function(item) {
+        if (count2 === 0) {
+            $("#row-" + count2).append("<td>" + item + "</td><td>" + "<a href='" + c + "' target='_blank'>" + a + "</a>")
+        } else {
+            $("#row-" + count2).append("<td>" + item + "</td>");
+        }
+        ;
+        count2++;
+    })
+    count2 = 0;
+    var img = $("<img>").attr({"src": b, "width": "100%", "height": "100%"});
     $("#slideshow").html(img);
-    $("#info").html("<a href='" + images[count][1] + "' target='_blank'>Link To</a>");
-    startSlideshow();
+    $("#link").html("<a href='" + c + "' target='_blank'>" + a + "</a>");
+    setTimeout(nextImage, 5000);
 }
 
 function nextImage() {
+    $("#row-0").html("");
+    $("#row-1").html("");
+    $("#row-2").html("");
+    $("#row-3").html("");
     $("#slideshow").html("")
     count++;
     if (count === images.length) {
         count = 0;
     }
     displayImage();
-}
-
-function startSlideshow() {
-    showImage = setTimeout(nextImage, 5000);
 }
 
 displayImage();

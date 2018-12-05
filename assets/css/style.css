@@ -1,42 +1,80 @@
 body {
-    letter-spacing: 150%;
     background-image: url(../images/background_img.jpg);
     background-size: 100%;
+    font-family: 'Text Me One', sans-serif;
+    color: yellow;
 }
 
-.container {
+.container2 {
     margin: 10px;
 }
 
+.header2 {
+    display: flex;
+    justify-content: space-between;
+    border-bottom-style: solid;
+    border-color: white;
+}
+
+#links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 2%;
+}
+
+a {
+    color: cyan;
+    border-style: none;
+    text-decoration: none;
+
+}
+
 #logo {
+    letter-spacing: 1px;
     color: yellow;
     font-size: 65px;
     font-family: 'Text Me One', sans-serif;
     margin: 10px 0 0 10px;
 }
 
-.about {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 10px;
+p {
+    color: gold;
+    font-size: 18px;
+    letter-spacing: 0.25px;
+    font-family: 'Patrick Hand', cursive;
+    background:rgba(0, 0, 0, 0.15);
 }
 
-#me {
-    margin-left: 10px;
-    background: white;
-    width: 24%;
-    height: 500px;
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+
+#time {
+    width: 45%;
 }
 
 #slideshow {
-    width: 50%;
-    height: 500px;
+    width: 88%;
+    margin: 10px;
+    height: 250px;
 }
 
 #info {
-    background: white;
-    width: 24%;
-    height: 500px;
+    width: 50%;
+    height: 400px;
 }
+
+#technology {
+    color: lime;
+}
+
+/* #time {
+    display: flex;
+    flex-direction: column;
+
+} */
