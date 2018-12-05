@@ -32,7 +32,7 @@ function nextImage() {
     $("#row-2").html("");
     $("#row-3").html("");
     $("#row-4").html("");
-    $("#slideshow").html("")
+    // $("#slideshow").html("")
     count++;
     if (count === images.length) {
         count = 0;
