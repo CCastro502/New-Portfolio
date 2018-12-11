@@ -2,11 +2,16 @@
 var images = [
     ["Project Elevation", "assets/images/How-High.png", "https://jmemmett.github.io/Project1/", "Multiple APIs in connection", "Leaflet", "JQuery", "JavaScript", "Bootstrap styling"],
     ["Gif-Movie-News Finder", "assets/images/api.png", "https://ccastro502.github.io/API-Info/", "Multiple APIs used", "JQuery", "Javascript", "Bootstrap styling"],
-    ["Trivia Game", "assets/images/Trivia-Game.png", "https://ccastro502.github.io/TriviaGame/", "JQuery", "JavaScript", "Flexbox styling"],
+    ["Trivia Game", "assets/images/Trivia-Game.png", "https://ccastro502.github.io/TriviaGame/", "JQuery", "JavaScript", "CSS Flexbox styling"],
     ["Onion Collector Game", "assets/images/Onion-Collector.png", "https://ccastro502.github.io/unit-4-game/", "JQuery", "JavaScript", "Boostrap styling"]
 ]
 var count = 0;
 var count2 = 0;
+
+$("#clickInfo").on("click", function(event) {
+    event.preventDefault();
+    $('#modal1').modal();
+})
 
 function displayImage() {
     var [a, b, c, ...d] = images[count];
