@@ -1,9 +1,9 @@
 // Global variables
 var images = [
-    ["Project Elevation", "assets/images/How-High.png", "https://jmemmett.github.io/Project1/", "Multiple APIs in connection", "Leaflet", "JQuery", "JavaScript", "Bootstrap styling"],
-    ["Gif-Movie-News Finder", "assets/images/api.png", "https://ccastro502.github.io/API-Info/", "Multiple APIs used", "JQuery", "Javascript", "Bootstrap styling"],
-    ["Trivia Game", "assets/images/Trivia-Game.png", "https://ccastro502.github.io/TriviaGame/", "JQuery", "JavaScript", "CSS Flexbox styling"],
-    ["Onion Collector Game", "assets/images/Onion-Collector.png", "https://ccastro502.github.io/unit-4-game/", "JQuery", "JavaScript", "Boostrap styling"]
+    ["Project Elevation", "assets/images/How-High.png", "https://jmemmett.github.io/Project1/", "Multiple APIs in connection", "Leaflet.js", "JQuery", "Bootstrap styling"],
+    ["Multiplayer Rock Paper Scissors", "assets/images/RPS.png", "https://ccastro502.github.io/RPS-Multiplayer/", "Firebase", "JQuery", "Bootstrap styling"],
+    ["Project Foodie", "assets/images/Project-Foodie.png", "https://fathomless-coast-18976.herokuapp.com/", "Node.js", "Mongoose.js", "Express.js", "Handlebars"],
+    ["Friend Finder", "assets/images/Friend-Finder.png", "https://morning-everglades-22263.herokuapp.com/survey", "Node.js", "Express.js", "Boostrap styling"]
 ]
 var count = 0;
 var count2 = 0;
